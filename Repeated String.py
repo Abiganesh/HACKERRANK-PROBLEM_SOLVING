@@ -1,0 +1,5 @@
+s, n = input().strip(), int(input().strip())
+first=s.count("a")
+second=n//len(s)
+third=s[:n % len(s)].count("a")
+print(first*second+third)
